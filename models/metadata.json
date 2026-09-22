@@ -1,0 +1,44 @@
+{
+  "model": "MobileNetV2 (frozen base, feature extractor)",
+  "img_size": 224,
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "preprocessing": "resize to 224x224, RGB, /255.0, then (x*2)-1",
+  "last_conv_layer": "Conv_1",
+  "model_comparison": {
+    "baseline_cnn_scratch": {
+      "best_val_accuracy": 85.587192,
+      "best_val_loss": 0.373674,
+      "test_accuracy": 75.875002,
+      "test_loss": 0.899102
+    },
+    "mobilenetv2_frozen_base": {
+      "best_val_accuracy": 93.24,
+      "best_val_loss": 0.1696,
+      "test_accuracy": 88.125002,
+      "test_loss": 0.424669
+    },
+    "mobilenetv2_fine_tuned": {
+      "best_val_accuracy": 82.918149,
+      "best_val_loss": 0.421271,
+      "test_accuracy": 79.000002,
+      "test_loss": 0.59377
+    }
+  },
+  "final_model_choice": "mobilenetv2_frozen_base",
+  "final_model_reason": "Best performance on both validation and test sets. Fine-tuning decreased accuracy compared to the frozen MobileNetV2 base.",
+  "test_accuracy": 88.125002,
+  "test_loss": 0.424669,
+  "per_class_accuracy": {
+    "glioma": 68.5,
+    "meningioma": 86.5,
+    "notumor": 99.25,
+    "pituitary": 98.25
+  },
+  "mean_confidence_correct": 93.84,
+  "mean_confidence_wrong": 74.11
+}
