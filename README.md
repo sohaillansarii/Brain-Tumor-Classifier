@@ -3,8 +3,8 @@
 A deep learning pipeline that classifies brain MRI scans into four categories — **glioma**, **meningioma**, **pituitary tumor**, and **no tumor** — using a CNN with transfer learning (MobileNetV2), served through a FastAPI backend with optional Grad-CAM explainability, deployed on Render.
 
 
-**Live demo:  Brain Tumor Classifier**
- _[[A](https://braintumorclassifierr.netlify.app/)]_
+**Live demo:**
+ _[[Brain Tumor Classifier](https://braintumorclassifierr.netlify.app/)]_
 
 ---
 
@@ -42,7 +42,7 @@ This project develops a lightweight MobileNetV2-based CNN to classify brain tumo
 | Model | Best Val Accuracy | Best Val Loss | Test Accuracy | Test Loss |
 |---|---|---|---|---|
 | Baseline CNN (from scratch) | 85.59% | 0.3737 | 75.88% | 0.8991 |
-| **MobileNetV2 (frozen base)** ✅ | 93.24% | 0.1696 | **88.13%** | **0.4247** |
+| **MobileNetV2 (frozen base)**  | 93.24% | 0.1696 | **88.13%** | **0.4247** |
 | MobileNetV2 (fine-tuned) | 82.92% | 0.4213 | 79.00% | 0.5938 |
 
 Both transfer-learning variants clearly outperformed the from-scratch baseline. Fine-tuning is notable for *underperforming* the frozen-base model on test despite scoring lower validation loss.
@@ -90,7 +90,7 @@ Built with **FastAPI**, served via **Docker**, deployed on **Render**.
 - Python 3.11
 
 **Deep Learning / ML**
-- TensorFlow (`tensorflow-cpu`)
+- TensorFlow 
 - Keras
 - scikit-learn
 
@@ -100,7 +100,7 @@ Built with **FastAPI**, served via **Docker**, deployed on **Render**.
 
 **Image Processing**
 - Pillow (PIL)
-- OpenCV (`opencv-python-headless`)
+- OpenCV 
 
 **Visualization**
 - Matplotlib
