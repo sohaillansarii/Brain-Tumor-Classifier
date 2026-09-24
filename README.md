@@ -4,7 +4,7 @@ A deep learning pipeline that classifies brain MRI scans into four categories â€
 
 
 **Live demo:**
- _[[Brain Tumor Classifier](https://braintumorclassifierr.netlify.app/)]_
+ _[Brain Tumor Classifier(https://braintumorclassifierr.netlify.app/)]_
 
 ---
 
@@ -114,10 +114,4 @@ Built with **FastAPI**, served via **Docker**, deployed on **Render**.
 **Deployment**
 - Docker
 - Render
-
-**Development Environment**
-- Google Colab
-
-`
-
 
