@@ -3,8 +3,9 @@
 A deep learning pipeline that classifies brain MRI scans into four categories — **glioma**, **meningioma**, **pituitary tumor**, and **no tumor** — using a CNN with transfer learning (MobileNetV2), served through a FastAPI backend with optional Grad-CAM explainability, deployed on Render.
 
 
-**Live demo:**
- _[[Brain Tumor Classifier](https://braintumorclassifierr.netlify.app/)]_
+**Live Demo: Brain Tumor Classifier**  
+_[View Live Demo](https://braintumorclassifierr.netlify.app/)_
+
 
 ---
 
