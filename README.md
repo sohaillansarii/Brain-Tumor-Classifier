@@ -114,9 +114,7 @@ Per-class accuracy and confidence behavior of the final model on the test set :
 ## Explainability (Grad-CAM)
 
 Grad-CAM (Gradient-weighted Class Activation Mapping) was implemented on the final model's last convolutional layer to visualize which regions of an input MRI scan most influenced its prediction, as a heatmap overlay. This was used  to visually check whether the model's attention aligned with plausible tumor regions rather than irrelevant background/artifacts.
-## API
 
-Built with **FastAPI**, served via **Docker**, deployed on **Render**.
 
 
 ### Tech Stack
@@ -147,6 +145,5 @@ Built with **FastAPI**, served via **Docker**, deployed on **Render**.
 
 
 **Deployment**
-- Docker
 - Render
 - Netlify
